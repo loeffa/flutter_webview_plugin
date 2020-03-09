@@ -7,18 +7,15 @@ import android.webkit.WebView;
 public class ObservableWebView extends WebView {
     private OnScrollChangedCallback mOnScrollChangedCallback;
 
-    public ObservableWebView(final Context context)
-    {
+    public ObservableWebView(final Context context) {
         super(context);
     }
 
-    public ObservableWebView(final Context context, final AttributeSet attrs)
-    {
+    public ObservableWebView(final Context context, final AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public ObservableWebView(final Context context, final AttributeSet attrs, final int defStyle)
-    {
+    public ObservableWebView(final Context context, final AttributeSet attrs, final int defStyle) {
         super(context, attrs, defStyle);
     }
 

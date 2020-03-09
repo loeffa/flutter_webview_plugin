@@ -128,7 +128,8 @@ class WebviewManager {
     private boolean ignoreSSLErrors = false;
 
     WebviewManager(final Activity activity, final Context context, final List<String> channelNames) {
-        this.webView = new ObservableWebView(activity);
+        int styleId = context.getResources().getIdentifier("WebViewTheme", "style", context.getPackageName());
+        this.webView = new ObservableWebView(activity, null, styleId);
         this.activity = activity;
         this.context = context;
         this.resultHandler = new ResultHandler();
